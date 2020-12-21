@@ -1,0 +1,26 @@
+.container {
+    display: grid;
+    justify-content: space-around;
+    padding: 100px;
+}
+
+.container.history {
+    padding: 20px;
+}
+
+.container.loading {
+    align-content: center;
+    height: 100vh;
+}
+
+.table td, .table th {
+    text-align: center;
+}
+
+.table {
+    width: 500px !important;
+}
+
+.history .table {
+    width: 1000px !important;
+}

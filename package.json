@@ -1,0 +1,23 @@
+{
+  "name": "crypto",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "build_local": "docker build -t 'crypto-api' .",
+    "run_local": "docker run -e DBHOST=0.0.0.0 -e DBUSER=padmin -e DBPASSWORD=super-strong-password -e DB=mydb --name crytpto-api-cont --rm -i -p 8080:8080 'crypto-api'",
+    "exec": "docker exec -it crytpto-api-cont bash"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "moment": "^2.29.1",
+    "morgan": "~1.9.1",
+    "mysql": "^2.18.1",
+    "request-promise": "^4.2.6"
+  }
+}
